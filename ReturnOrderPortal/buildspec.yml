@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11 
+      docker: 18
+  pre_build:
+    commands:
+      - echo "Pre_build"
+      - echo "Logging in to Amazon ECR"
+      - $(aws ecr get-login  --no-include-email --region us-east-1)
+  build:
+    commands:
+      - echo "Build"
+      - echo "Entered build phase"
+      - echo "Building Java application"
+      - cd  truyum-cart
+      - mvn clean package
+      - docker build -t g2-cart-service:latest .
+      - docker tag g2-cart-service:latest 234825976347.dkr.ecr.us-east-1.amazonaws.com/g2-cart-service
+
+  post_build:
+    commands:
+      - echo "Post_build"
+      - docker push 234825976347.dkr.ecr.us-east-1.amazonaws.com/g2-cart-service
+      - printf '[{"name":"g2-cart-container","imageUri":"%s"}]' 234825976347.dkr.ecr.us-east-1.amazonaws.com/g2-cart-service > taskdefinition.json
+      - cat taskdefinition.json
+
+artifacts:
+  files:
+      - truyum-cart/taskdefinition.json

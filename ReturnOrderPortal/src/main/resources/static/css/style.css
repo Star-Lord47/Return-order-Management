@@ -1,0 +1,140 @@
+/* Common  */
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+.custom-shape-divider-bottom-1619409571 {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	margin-bottom: 0px;
+}
+
+.custom-shape-divider-bottom-1619409571 svg {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 100%;
+	width: calc(100% + 1.3px);
+	height: 265px;
+}
+
+.custom-shape-divider-bottom-1619409571 .shape-fill {
+	fill: #e43b08;
+}
+/*Header */
+.navbar {
+	background-color: #a50c0cdc;
+}
+
+#header {
+	margin: auto;
+	padding: auto;
+	color: #FFF;
+}
+
+#navItem {
+	color: #FFF;
+}
+
+/* Login page */
+#heading {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#main {
+	padding: auto;
+	margin: auto;
+	margin-top: 10%;
+}
+
+#image {
+	text-align: center;
+}
+
+#login-image {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 20px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+#login-form {
+	margin: auto;
+	padding: auto;
+	width: 10%;
+}
+
+#error {
+	text-align: center;
+	margin: auto;
+	padding: auto;
+}
+
+#payment-btn {
+	/* margin: 20px; */
+	width: 70%;
+	padding: auto;
+	margin: auto;
+}
+
+#thHeader {
+	width: "75%";
+	align: "left";
+	background-color: #eeeeee;
+	font-family: OpenSans, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	padding: 10px;
+}
+
+#thHeaderRight {
+	width: "25%";
+	align: "left";
+	background-color: #eeeeee;
+	font-family: OpenSans, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	padding: 10px;
+}
+
+#tdBodyLeft {
+	width: 75%;
+	float: "left";
+	font-family: OpenSans, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 15px 10px 5px 10px;
+}
+
+#tdBodyRight {
+	width: "25%", float:"left", font-family:OpenSans, Helvetica, Arial,
+		sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 15px 10px 5px 10px;
+}
+
+#payment {
+	align: "center";
+	border: "0";
+	cellpadding: "0";
+	cellspacing: "0";
+	width: 100%;
+	max-width: 600px;
+}
